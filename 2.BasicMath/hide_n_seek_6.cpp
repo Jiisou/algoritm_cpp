@@ -17,12 +17,12 @@ int main() {
 
 	for (int i = 0; i < n; i++) {
 		cin >> a;
-		int distance = abs(s - a);
+		int distance = abs(s - a); //거리
 		if (result != 0) {
-			result = gcd(distance, result);
+			result = gcd(distance, result); //3개 이상의 수 사이에서 gcd 구하기 위한 스텝
 		}
 		else {
-			result = distance;
+			result = distance; //최초 세팅
 		}
 	}
 	cout << result<<'\n';
