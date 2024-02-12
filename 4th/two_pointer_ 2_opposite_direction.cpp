@@ -15,6 +15,7 @@ int main() {
 	cin >> x;
 
 	sort(a, a+n); // c++ STL sort문법 <시작위치, 끝위치>
+		// 퀵정렬 함수 직접 구현하여 호출했을 땐 시간 초과 발생함
 	
 	int left = 0;
 	int right = n -1; // index
